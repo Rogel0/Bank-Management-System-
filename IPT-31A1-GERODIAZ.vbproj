@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6830A1F-42D0-4664-A9E8-9988CC117FD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IPT_31A1_GERODIAZ.My.MyApplication</StartupObject>
+    <RootNamespace>IPT_31A1_GERODIAZ</RootNamespace>
+    <AssemblyName>IPT-31A1-GERODIAZ</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IPT-31A1-GERODIAZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>IPT-31A1-GERODIAZ.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientLoginFrm.Designer.vb">
+      <DependentUpon>ClientLoginFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLoginFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsAccountFrm.Designer.vb">
+      <DependentUpon>ClientsAccountFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsAccountFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseConnection.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivityLog.Designer.vb">
+      <DependentUpon>frmActivityLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivityLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminDashboard.Designer.vb">
+      <DependentUpon>FrmAdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientChangePass.Designer.vb">
+      <DependentUpon>frmClientChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientDashboard.Designer.vb">
+      <DependentUpon>frmClientDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateAccount.Designer.vb">
+      <DependentUpon>FrmCreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateClientAccount.Designer.vb">
+      <DependentUpon>FrmCreateClientAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateClientAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.vb">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeposit.Designer.vb">
+      <DependentUpon>frmDeposit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeposit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDisplay.Designer.vb">
+      <DependentUpon>FrmDisplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDisplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhistory.Designer.vb">
+      <DependentUpon>frmhistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmhistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdraw.Designer.vb">
+      <DependentUpon>frmWithdraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientLoginFrm.resx">
+      <DependentUpon>ClientLoginFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsAccountFrm.resx">
+      <DependentUpon>ClientsAccountFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivityLog.resx">
+      <DependentUpon>frmActivityLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminDashboard.resx">
+      <DependentUpon>FrmAdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientChangePass.resx">
+      <DependentUpon>frmClientChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientDashboard.resx">
+      <DependentUpon>frmClientDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateAccount.resx">
+      <DependentUpon>FrmCreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateClientAccount.resx">
+      <DependentUpon>FrmCreateClientAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeposit.resx">
+      <DependentUpon>frmDeposit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDisplay.resx">
+      <DependentUpon>FrmDisplay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhistory.resx">
+      <DependentUpon>frmhistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdraw.resx">
+      <DependentUpon>frmWithdraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_welcome_cats_thqn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-circle-regular-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Authentication_re_svpt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Male_avatar_g98d.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

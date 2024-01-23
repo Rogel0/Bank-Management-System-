@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IPT-31A1-GERODIAZ
+</name>
+</assembly>
+<members>
+<member name="T:IPT_31A1_GERODIAZ.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.undraw_Authentication_re_svpt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.undraw_Male_avatar_g98d">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.undraw_welcome_cats_thqn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:IPT_31A1_GERODIAZ.My.Resources.Resources.user_circle_regular_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
